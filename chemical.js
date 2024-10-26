@@ -472,7 +472,7 @@
     await loadScript("meteor/meteor.config.js");
   }
   window.chemical.connection = new window.BareMux.BareMuxConnection(
-    "https://enchanteddonutstudioz.github.io/Bolt-Static/baremux/worker.js"
+    "baremux/worker.js"
   );
   await window.chemical.setTransport(window.chemical.transport);
   setupFetch();
