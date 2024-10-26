@@ -4,16 +4,7 @@
   const scramjetEnabled = false;
   const uvEnabled = true;
   const defaultService = "uv";
-  __uv$config = {
-    prefix: "/~/uv/",
-    encodeUrl: Ultraviolet.codec.xor.encode,
-    decodeUrl: Ultraviolet.codec.xor.decode,
-    handler: "uv/uv.handler.js",
-    client: "uv/uv.client.js",
-    bundle: "uv/uv.bundle.js",
-    config: "uv/uv.config.js",
-    sw: "uv/uv.sw.js",
-  };
+  __uv$config = "/uv/uv.config.js";
 
   const currentScript = document.currentScript;
 
