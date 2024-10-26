@@ -1,4 +1,4 @@
-fetch('/assets/json/apps.json')
+fetch('assets/json/apps.json')
     .then(response => response.json())
     .then(apps => {
         const appsContainer = document.querySelector('.apps');
@@ -19,7 +19,7 @@ fetch('/assets/json/apps.json')
                     searchEngine: "https://www.google.com/search?q=%s"
                 })
                 localStorage.setItem('url', ute);
-                window.location.href = '/browser.html';
+                window.location.href = 'browser.html';
             });
 
             appsContainer.appendChild(appElement);

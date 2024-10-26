@@ -20,7 +20,7 @@ async function encodeUrl() {
     })
     console.log(url)
     localStorage.setItem("url", url);
-    window.location.href = "/browser.html";
+    window.location.href = "browser.html";
 }
 
 
