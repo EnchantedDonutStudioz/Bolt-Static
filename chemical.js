@@ -365,10 +365,10 @@
     switch (transport) {
       default:
       case "libcurl":
-        return "libcurl/index.mjs";
+        return "/libcurl/index.mjs";
         break;
       case "epoxy":
-        return "epoxy/index.mjs";
+        return "/epoxy/index.mjs";
         break;
     }
   }
