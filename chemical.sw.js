@@ -3,21 +3,21 @@ const meteorEnabled = false;
 const scramjetEnabled = false;
 const uvEnabled = true;
 if (uvEnabled) {
-  importScripts("/uv/uv.bundle.js");
-  importScripts("/uv/uv.config.js");
-  importScripts(__uv$config.sw || "/uv/uv.sw.js");
+  importScripts("uv/uv.bundle.js");
+  importScripts("uv/uv.config.js");
+  importScripts(__uv$config.sw || "uv/uv.sw.js");
 }
 if (scramjetEnabled) {
-  importScripts("/scramjet/scramjet.codecs.js");
-  importScripts("/scramjet/scramjet.config.js");
-  importScripts(__scramjet$config.bundle || "/scramjet/scramjet.bundle.js");
-  importScripts(__scramjet$config.worker || "/scramjet/scramjet.worker.js");
+  importScripts("scramjet/scramjet.codecs.js");
+  importScripts("scramjet/scramjet.config.js");
+  importScripts(__scramjet$config.bundle || "scramjet/scramjet.bundle.js");
+  importScripts(__scramjet$config.worker || "scramjet/scramjet.worker.js");
 }
 if (meteorEnabled) {
-  importScripts("/meteor/meteor.codecs.js");
-  importScripts("/meteor/meteor.config.js");
-  importScripts($meteor_config.files.bundle || "/meteor/meteor.bundle.js");
-  importScripts($meteor_config.files.worker || "/meteor/meteor.worker.js");
+  importScripts("meteor/meteor.codecs.js");
+  importScripts("meteor/meteor.config.js");
+  importScripts($meteor_config.files.bundle || "meteor/meteor.bundle.js");
+  importScripts($meteor_config.files.worker || "meteor/meteor.worker.js");
 }
 
 Object.defineProperty(self, "crossOriginIsolated", { value: true }); // Firefox fix
