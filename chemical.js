@@ -364,10 +364,10 @@
     switch (transport) {
       default:
       case "libcurl":
-        return "/libcurl/index.mjs";
+        return "libcurl/index.mjs";
         break;
       case "epoxy":
-        return "/epoxy/index.mjs";
+        return "epoxy/index.mjs";
         break;
     }
   }
@@ -397,7 +397,7 @@
 
   async function registerSW() {
     if ("serviceWorker" in navigator) {
-      await navigator.serviceWorker.register("/chemical.sw.js");
+      await navigator.serviceWorker.register("chemical.sw.js");
     } else {
       console.error("Service worker failed to register.");
     }
