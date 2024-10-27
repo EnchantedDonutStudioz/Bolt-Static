@@ -4,8 +4,8 @@ const input = document.getElementById("input");
 var urlToEncode;
 
 async function init() {
-
     await chemical.setTransport(localStorage.getItem("transport") || "epoxy");
+    await chemical.setWisp("wss://wisp.mercurywork.shop/")
 }
 window.addEventListener("chemicalLoaded", function (e) {
     init();
